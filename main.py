@@ -22,13 +22,16 @@ def main():
         print("Current total: $", str(format(total, ".2f")), "\n", sep = "")
     
     # Display results
-    print("\nWith a budget of $", str(format(budget, ".2f")), ", your expenses added up to $",
+    print("\nWith a budget of $", str(format(budget, ".2f")), ", your expenses"
+    " added up to $",
      str(format(total, ".2f")), sep = "")
     print("You're ", sep = "", end = "")
     if budget - total > 0:
-        print("$", str(format(budget - total, ".2f")), " under budget.\n", sep = "")
+        print("$", str(format(budget - total, ".2f")), " under budget.\n", sep 
+        = "")
     elif budget - total < 0:
-        print("$", str(format(abs(budget - total), ".2f")), " over budget.\n", sep = "")
+        print("$", str(format(abs(budget - total), ".2f")), " over budget.\n", 
+        sep = "")
     else:
         print("exactly within budget.\n")
     
